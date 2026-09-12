@@ -1,32 +1,45 @@
-using System.Diagnostics;
 using ExamApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace ExamApp.Controllers
 {
-    public class HomeController : Controller
+    using global::IT_ELECTIVE_2_SECTION_PREFINAL_EXAM_Lastname_Firstname.Models;
+    using Microsoft.AspNetCore.Mvc;
+
+    namespace IT_ELECTIVE_2_SECTION_PREFINAL_EXAM_Lastname_Firstname.Controllers
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public class HomeController : Controller
         {
-            _logger = logger;
-        }
+            public IActionResult Index()
+            {
+                var answers = new List<QuestionAnswer>
+            {
+                new() { Number = 1, Question = "What is the main problem solved by using a database instead of an in-memory collection?", Choices = new[]{"It makes C# code shorter","It prevents the application from restarting","It allows data to persist after the application stops","It removes the need for MVC"}, Answer = "C" },
 
-        public IActionResult Index()
-        {
-            return View();
-        }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            };
+                return View(answers);
+            }
         }
     }
 }

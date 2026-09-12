@@ -1,8 +1,33 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<IT_ELECTIVE_2_SECTION_PREFINAL_EXAM_Lastname_Firstname.Models.QuestionAnswer>
+@{
+    ViewData["Title"] = "IT Elective 2 - Prefinal Exam Answers";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container my-4">
+    <h1 class="mb-4 text-center">IT Elective 2 – Prefinal Exam</h1>
+    <p class="text-center text-muted">Multiple Choice – Questions and Answers</p>
+
+    @foreach (var item in Model)
+    {
+        <div class="card mb-3 shadow-sm">
+            <div class="card-header bg-primary text-white">
+                Question @item.Number
+            </div>
+            <div class="card-body">
+                <p class="card-text fw-bold">@item.Question</p>
+                <ul class="list-group list-group-flush mb-2">
+                    @{
+                        var letters = new[] { "A", "B", "C", "D" };
+                    }
+                    @for (int i = 0; i < item.Choices.Length; i++)
+                    {
+                        <li class="list-group-item @(letters[i] == item.Answer ? "list-group-item-success fw-bold" : "")">
+                            @letters[i]. @item.Choices[i]
+                        </li>
+                    }
+                </ul>
+                <p class="mb-0"><span class="badge bg-success">Answer: @item.Answer</span></p>
+            </div>
+        </div>
+    }
 </div>
