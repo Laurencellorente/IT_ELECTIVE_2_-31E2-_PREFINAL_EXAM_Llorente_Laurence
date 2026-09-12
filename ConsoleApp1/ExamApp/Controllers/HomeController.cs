@@ -25,6 +25,7 @@ namespace ExamApp.Controllers
                 new() { Number = 8, Question = "In 'public int SectionId { get; set; }', what is SectionId?", Choices = new[]{"Primary key of Student","Foreign key referencing Section","Navigation property","Database connection string"}, Answer = "B" },
                 new() { Number = 9, Question = "What is the purpose of a navigation property such as 'public Section Section { get; set; }'?", Choices = new[]{"It stores the database password","It represents a relationship to another entity","It creates a new database","It validates the student's name"}, Answer = "B" },
                 new() { Number = 10, Question = "What does .Include() generally allow EF Core to do?", Choices = new[]{"Delete the Section table","Load related Section data together with Students","Create a new Student","Validate Student input"}, Answer = "B" },
+                new() { Number = 11, Question = "Why might a ViewModel be used when displaying Student and Section information?", Choices = new[]{"To replace the database","To combine or shape the data specifically needed by the view","To automatically create database tables","To prevent controllers from using LINQ"}, Answer = "B" },
 
 
 
