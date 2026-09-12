@@ -21,6 +21,7 @@ namespace ExamApp.Controllers
                 new() { Number = 4, Question = "Which EF Core component is primarily responsible for communicating with the database?", Choices = new[]{"DbContext","DbSetView","ControllerContext","RazorContext"}, Answer = "A" },
                 new() { Number = 5, Question = "What does the command 'dotnet ef dbcontext scaffold' primarily do?", Choices = new[]{"Deletes the database","Creates a new MVC project","Generates EF Core models and a DbContext from an existing database","Starts the MVC application"}, Answer = "C" },
                 new() { Number = 6, Question = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?", Choices = new[]{"Program.cs only","appsettings.json","Index.cshtml","Student.cs"}, Answer = "B" },
+                new() { Number = 7, Question = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?", Choices = new[]{"One-to-One","One-to-Many","Many-to-Many","Many-to-One only"}, Answer = "B" },
 
 
 
