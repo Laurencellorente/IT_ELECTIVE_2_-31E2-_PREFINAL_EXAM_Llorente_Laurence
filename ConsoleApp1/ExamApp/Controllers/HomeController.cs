@@ -33,6 +33,7 @@ namespace ExamApp.Controllers
                 new() { Number = 16, Question = "Which is the best reason for having a database-level unique constraint on StudentNumber?", Choices = new[]{"It protects data integrity even if application-level validation is bypassed","It makes Razor Views render faster","It removes the need for a Controller","It automatically creates a ViewModel"}, Answer = "A" },
                 new() { Number = 17, Question = "What is the purpose of a try...catch block in a controller?", Choices = new[]{"To create navigation properties","To catch and handle exceptions that may occur during execution","To generate database tables","To perform client-side validation"}, Answer = "B" },
                 new() { Number = 18, Question = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?", Choices = new[]{"UseDatabase()","UseExceptionHandler()","UseValidationHandler()","UseMvcDatabase()"}, Answer = "B" },
+                new() { Number = 19, Question = "A user requests /Student/999, but Student 999 does not exist. What would be the most appropriate response?", Choices = new[]{"Display the student's information anyway","Display a Not Found (404) response/page","Delete Student 999","Create Student 999 automatically"}, Answer = "B" },
 
 
 
