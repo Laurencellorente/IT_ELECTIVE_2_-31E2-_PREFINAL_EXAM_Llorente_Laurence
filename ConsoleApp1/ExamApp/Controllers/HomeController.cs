@@ -28,6 +28,7 @@ namespace ExamApp.Controllers
                 new() { Number = 11, Question = "Why might a ViewModel be used when displaying Student and Section information?", Choices = new[]{"To replace the database","To combine or shape the data specifically needed by the view","To automatically create database tables","To prevent controllers from using LINQ"}, Answer = "B" },
                 new() { Number = 12, Question = "In '_context.Students.Include(s => s.Section).ToList()', what is the main benefit of Include(s => s.Section)?", Choices = new[]{"It loads the related Section navigation property","It creates a Section object manually","It removes the foreign key","It prevents the query from accessing the database"}, Answer = "A" },
                 new() { Number = 13, Question = "Which type of validation occurs in the browser before a request is sent to the server?", Choices = new[]{"Database-level validation","Client-side validation","Server-side validation","EF Core migration validation"}, Answer = "B" },
+                new() { Number = 14, Question = "Why is server-side validation still necessary if client-side validation exists?", Choices = new[]{"Client-side validation can be bypassed","Client-side validation automatically modifies the database","Server-side validation only works with SQLite","Client-side validation cannot display messages"}, Answer = "A" },
 
 
 
