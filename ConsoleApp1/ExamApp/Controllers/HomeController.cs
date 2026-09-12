@@ -20,6 +20,7 @@ namespace ExamApp.Controllers
                 new() { Number = 3, Question = "What is the primary purpose of Entity Framework Core?", Choices = new[]{"To create HTML pages automatically","To replace the MVC Controller","To map objects in code to relational database data","To replace the C# compiler"}, Answer = "C" },
                 new() { Number = 4, Question = "Which EF Core component is primarily responsible for communicating with the database?", Choices = new[]{"DbContext","DbSetView","ControllerContext","RazorContext"}, Answer = "A" },
                 new() { Number = 5, Question = "What does the command 'dotnet ef dbcontext scaffold' primarily do?", Choices = new[]{"Deletes the database","Creates a new MVC project","Generates EF Core models and a DbContext from an existing database","Starts the MVC application"}, Answer = "C" },
+                new() { Number = 6, Question = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?", Choices = new[]{"Program.cs only","appsettings.json","Index.cshtml","Student.cs"}, Answer = "B" },
 
 
 
